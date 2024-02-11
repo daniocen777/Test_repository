@@ -42,7 +42,7 @@ class ProductDataAccess {
     }
 
     async findById(id) {
-        let query = "SELECT name, price, description FROM products WHERE id = ?";
+        let query = "SELECT id, name, price, description FROM products WHERE id = ?";
         try {
             let responnse = await mysql.query(query, [id]);
             if (responnse.length === 1) {
