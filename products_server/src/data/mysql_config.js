@@ -24,7 +24,7 @@ mysqlClient.getConnection((err, connection) => {
 
     if (connection) {
         connection.release(); // cuando se termine conexion, liberar
-        console.log("Conexión MYSQL establecida");
+        console.log("Conexión MYSQL establecida OK");
     }
 
     return;

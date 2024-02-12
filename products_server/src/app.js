@@ -8,6 +8,7 @@ const productRoutes = require("./routes/product_routes");
 
 /* Settings */
 app.use(express.json());
+app.disable('etag');
 app.use(cors());
 app.set("port", process.env.PORT || 3001);
 app.use(morgan("dev"));
